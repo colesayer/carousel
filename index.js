@@ -11,8 +11,13 @@ window.onload = function(){
     let active
 
     function setActiveNav(el){
-      if (active) active.id = ""
+
+      if (active) {
+        active.id = ""
+        active.style.color = "#A9A9A9"
+      }
       el.id = "active"
+      el.style.color = "black"
       active = el
     }
 
