@@ -1,6 +1,6 @@
 window.onload = function(){
 
-  var carousel = function(){
+  const carousel = function(){
     const carousel = document.getElementById('carousel')
     const carouselImageContainer = document.getElementById('carousel-image-container')
     const carouselImageDivs = carousel.getElementsByClassName('image-div')
@@ -19,6 +19,7 @@ window.onload = function(){
       el.id = "active"
       el.style.color = "black"
       active = el
+      console.log("ACTIVE", active)
     }
 
     function setNextIndex(){
